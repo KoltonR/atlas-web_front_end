@@ -1,0 +1,7 @@
+@import 'background-images'; // Assuming the file is named background-images.scss
+
+@each $name, $background in $backgrounds {
+  .#{unquote($name)} {
+    background-image: $background;
+  }
+}
